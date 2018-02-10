@@ -16,6 +16,17 @@
         height: 100%;
         font-family: arial;
         text-align: center;
+        color: #97542c; 
+        font-size:24px;
+    }
+
+    .fontHighlightColor {
+        color: #cd5936;
+        font-weight: bold;
+    }
+
+    .fontDeepHighlightColor {
+        color: #a63e3f;
     }
     
     * {
@@ -27,11 +38,12 @@
     }
     
     .item1 {
-        padding-top: 60px;
+        padding-top: 6%;
         background-color: #fff;
     }
     .item2 {
-        background-color: #0067A6;
+        background-color: #fff;
+        
     }
     .item3 {
         background-color: #008972;
@@ -46,20 +58,19 @@
         background-color: #0067A6;
     }
 
-    /* Fixed header and footer.
-        * --------------------------------------- */
-        #header{
-            position:fixed;
-            height: 5%;
-            display:block;
-            width: 100%;
-            background: #333;
-            z-index:9;
-            text-align:center;
-            color: #f2f2f2;
-            padding: 20px 0 0 0;
-            top:0px;
-        }
+    /* Fixed header common */
+    #header{
+        position:fixed;
+        height: 5%;
+        display:block;
+        width: 100%;
+        background: #333;
+        z-index:9;
+        text-align:center;
+        color: #f2f2f2;
+        padding: 20px 0 0 0;
+        top:0px;
+    }
 
     .commonTopLogo {
         position: absolute;
@@ -73,11 +84,10 @@
         background-size: 100% 100%;
         
     }
-
+    /* Page 1 */
     .item1 .leapGray {
         position: absolute;
         top: 8%;
-        /*left: 19%;*/
         text-align: center;
         width: 100%;
         height: 30%;
@@ -89,7 +99,6 @@
     .item1 .leapRed {
         position: absolute;
         top: 6.5%;
-        /*left: 19%;*/
         text-align: center;
         width: 100%;
         height: 30%;
@@ -162,6 +171,87 @@
         background-position: center; 
         background-size: 100% 100%;
     }
+    /* Page 2 */
+    .item2 .textTop {
+        position: relative;
+        margin-top: 32%;
+        right: 19%;
+        left: 40%;
+        text-align: left;
+        width: 60%;
+        height: 26px;
+    }
+    .item2 .textMiddle {
+        position: relative;
+        margin-top: 7%;
+        right: 19%;
+        left: 40%;
+        text-align: left;
+        width: 60%;
+        height: 52px;
+    }
+    .item2 .textBottom {
+        position: relative;
+        margin-top: 5%;
+        right: 19%;
+        left: 40%;
+        text-align: left;
+        width: 60%;
+        height: 52px;
+    }
+
+    .item2 .calendarContent {
+        position: absolute;
+        bottom: 100px;
+        right: 10%;
+        text-align: right;
+        width: 180px;
+        height: 150px;
+        background: url(./image/2_calendar_container.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+
+    .item2 .calendarContentMonth {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding-top: 5px;
+        color: white;
+    }
+
+    .item2 .calendarContentDay {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 100px;
+    }
+
+    .item2 .calendarBottom {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        bottom: 0px;
+        background: url(./image/2_calendar_bottom.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+
+    .item2 .calendarBottomInner {
+        position: absolute;
+        width: 200px;
+        height: 70px;
+        bottom: 60px;
+        right: 130px;
+        background: url(./image/2_calendar_bottom_inner.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+
+    /* Page 3 */
     .item3 .part2 {
         position: absolute;
         bottom: 100px;
@@ -171,33 +261,7 @@
         height: 100px;
         background-color: rgb(116, 178, 9);
     }
-    .item2 .part1 {
-        position: absolute;
-        top: 100px;
-        right: 19%;
-        text-align: center;
-        width: 100px;
-        height: 100px;
-        background-color: rgb(116, 178, 9);
-    }
-    .item2 .part3 {
-        position: absolute;
-        bottom: 60px;
-        left: 19%;
-        text-align: center;
-        width: 150px;
-        height: 150px;
-        background-color: rgb(116, 178, 9);
-    }
-    .item2 .part2 {
-        position: absolute;
-        top: 100px;
-        left: 19%;
-        text-align: center;
-        width: 100px;
-        height: 100px;
-        background-color: rgb(116, 178, 9);
-    }
+    /* Page 3 */
     .item4 .part1 {
         position: absolute;
         top: 100px;
@@ -278,10 +342,26 @@
             <div class="tuneRight fadeIn" data-delay="1000"></div>
         </div>
         <div class="item item2">
-            <h2>page2</h2>
-            <div class="part part1 slideRight" data-delay="1300"></div>
-            <div class="part part2 slideLeft"></div>
-            <div class="part part3 zoomIn"></div>
+            <div class="commonTopLogo"></div>
+            <div class="Me textTop fadeIn">我</div>
+            <div class="part textMiddle slideLeft">
+                从<span class="fontHighlightColor">2017年8月21日</span><br />
+                开始练习
+            </div>
+            <div class="part textBottom slideRight">
+                截止今天一共是<br />
+                <span class="fontHighlightColor">134</span> 天
+            </div>
+            
+            <div class="calendarBottom">
+                <div class="calendarBottomInner"></div>
+            </div>
+
+            <div class="part calendarContent zoomIn">
+                <div class="calendarContentMonth">DEC</div>
+                <div class="calendarContentDay fontDeepHighlightColor">15</div>
+            </div>
+            
         </div>
         <div class="item item3">
             <h2>page3</h2>
