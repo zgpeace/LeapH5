@@ -46,15 +46,19 @@
     width: 25px;
     height: 25px;
     position: absolute;
-    bottom: 18px;
+    bottom: 5%;
     left: 50%;
     margin-left: -10px;
-    border-top: 2px solid #5a584e;
-    border-left: 2px solid #5a584e;
+    /*border-top: 2px solid #5a584e;
+    border-left: 2px solid #5a584e;*/
     z-index: 9999;
     -webkit-tap-highlight-color: rgba(255,255,255,0);
     animation: fadeInUp 1.5s .2s ease infinite;
+    -webkit-animation: rotate 3.82s linear infinite;
     -webkit-animation: fadeInUp 1.5s .2s infinite;
+    background: url(./image/common_guide_arrow.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 .H5FullscreenPage .parallax.part {
     transition: all .5s;
