@@ -400,47 +400,65 @@
     }
 
     /* Page 5 */
-    .item5 .part1 {
+    .item5 .hillRight {
         position: absolute;
-        bottom: 100px;
-        right: 19%;
-        text-align: center;
-        width: 150px;
-        height: 100px;
-        background-color: rgb(116, 178, 9);
+        width: 90%;
+        height: 90%;
+        right: 0;
+        bottom: 0;
+        background: url(./image/5_hill_right.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
     }
-    .item5 .part2 {
+    .item5 .metronome {
         position: absolute;
-        top: 100px;
-        left: 19%;
-        text-align: center;
-        width: 150px;
+        width: 103px;
+        height: 151px;
+        left: 30px;
+        bottom: 30px;
+        background: url(./image/5_metronome.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
+    }
+    /* Page 6 */
+    .item6 .bottomHill {
+        position: absolute;
+        width: 100%;
         height: 100px;
-        background-color: rgb(116, 178, 9);
+        bottom: 0px;
+        background: url(./image/6_bottom.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
     }
     
-    .item6 .part2 {
+    .item6 .testPaperLeft {
         position: absolute;
-        top: 100px;
-        left: 19%;
-        text-align: center;
-        width: 150px;
-        height: 100px;
-        background-color: rgb(116, 178, 9);
+        width: 104px;
+        height: 143px;
+        left: 30px;
+        bottom: 70px;
+        background: url(./image/6_test_paper.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
     }
-    .item6 .part1 {
+
+
+    .item6 .scoreGood {
         position: absolute;
-        bottom: 100px;
-        left: 19%;
-        text-align: center;
-        width: 250px;
-        height: 250px;
-        background-color: rgb(116, 178, 9);
+        width: 71px;
+        height: 27px;
+        left: 100px;
+        bottom: 230px;
+        background: url(./image/6_score_good.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center; 
     }
-    /*.item6 {
-        background-image: url(7634.jpg);
-        background-position: center;
-    }*/
+    
 </style>
 
 </head>
@@ -529,6 +547,10 @@
                 类的时间最长<br />
                 是 <span class="fontHighlightColor">1367</span> 分钟
             </div>
+
+            <div class="item5 hillRight animated fadeIn"></div>
+            <div class="item5 metronome animated fadeIn"></div>
+            
         </div>
         <div class="item item6">
             <div class="commonTopLogo"></div>
@@ -537,6 +559,11 @@
                 所有课程考核里，最高<br />
                 得分是 <span class="fontHighlightColor">97</span> 分
             </div>
+
+            <div class="item6 bottomHill animated fadeIn"></div>
+            <div class="item6 testPaperLeft animated fadeIn"></div>
+            <div class="item6 scoreGood animated fadeIn"></div>
+            
         </div>
         <div class="item item7">
             <div class="commonTopLogo"></div>
